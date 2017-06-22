@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\build\common.props" />
+
+  <PropertyGroup>
+    <Description>Microsoft Azure KeyVault key encryption support.</Description>
+    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageTags>aspnetcore;dataprotection;azure;keyvault</PackageTags>
+    <EnableApiCheck>false</EnableApiCheck>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.AspNetCore.DataProtection\Microsoft.AspNetCore.DataProtection.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="$(IdentityModelActiveDirectoryVersion)" />
+    <PackageReference Include="Microsoft.Azure.KeyVault" Version="$(AzureKeyVaultVersion)" />
+  </ItemGroup>
+
+</Project>

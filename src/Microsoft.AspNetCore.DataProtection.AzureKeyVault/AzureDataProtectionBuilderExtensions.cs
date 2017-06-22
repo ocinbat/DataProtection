@@ -17,7 +17,7 @@ namespace Microsoft.AspNetCore.DataProtection
     /// </summary>
     public static class AzureDataProtectionBuilderExtensions
     {
-#if NET451
+#if NET461
         /// <summary>
         /// Configures the data protection system to protect keys with specified key in Azure KeyVault.
         /// </summary>
