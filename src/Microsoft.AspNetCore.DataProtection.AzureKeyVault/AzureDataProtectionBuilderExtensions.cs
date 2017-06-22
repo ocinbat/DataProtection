@@ -36,6 +36,7 @@ namespace Microsoft.AspNetCore.DataProtection
             {
                 throw new ArgumentNullException(nameof(certificate));
             }
+
             KeyVaultClient.AuthenticationCallback callback =
                 (authority, resource, scope) => GetTokenFromClientCertificate(authority, resource, clientId, certificate);
 
@@ -68,6 +69,7 @@ namespace Microsoft.AspNetCore.DataProtection
             {
                 throw new ArgumentNullException(nameof(clientSecret));
             }
+
             KeyVaultClient.AuthenticationCallback callback =
                 (authority, resource, scope) => GetTokenFromClientSecret(authority, resource, clientId, clientSecret);
 
@@ -103,6 +105,7 @@ namespace Microsoft.AspNetCore.DataProtection
             {
                 throw new ArgumentNullException(nameof(keyIdentifier));
             }
+
             var vaultClientWrapper = new KeyVaultClientWrapper(client);
 
             builder.Services.AddSingleton<IKeyVaultWrappingClient>(vaultClientWrapper);
