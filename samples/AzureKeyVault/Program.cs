@@ -25,7 +25,6 @@ namespace ConsoleApplication
             store.Open(OpenFlags.ReadOnly);
             var cert = store.Certificates.Find(X509FindType.FindByThumbprint, config["CertificateThumbprint"], false);
 
-
             var serviceCollection = new ServiceCollection();
             serviceCollection.AddLogging();
             serviceCollection.AddDataProtection()
