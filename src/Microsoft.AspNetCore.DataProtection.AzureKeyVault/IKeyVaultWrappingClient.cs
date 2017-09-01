@@ -4,7 +4,7 @@
 using System.Threading.Tasks;
 using Microsoft.Azure.KeyVault.Models;
 
-namespace Microsoft.AspNetCore.DataProtection.Azure.KeyVault
+namespace Microsoft.AspNetCore.DataProtection.AzureKeyVault
 {
     internal interface IKeyVaultWrappingClient
     {

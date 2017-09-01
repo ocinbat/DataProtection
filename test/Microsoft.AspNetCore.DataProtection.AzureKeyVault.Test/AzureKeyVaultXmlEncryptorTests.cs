@@ -11,9 +11,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Moq;
 using Xunit;
 
-namespace Microsoft.AspNetCore.DataProtection.Azure.KeyVault.Test
+namespace Microsoft.AspNetCore.DataProtection.AzureKeyVault.Test
 {
-    public class AzureKeyVaultTests
+    public class AzureKeyVaultXmlEncryptorTests
     {
         [Fact]
         public void UsesKeyVaultToEncryptKey()
@@ -43,7 +43,8 @@ namespace Microsoft.AspNetCore.DataProtection.Azure.KeyVault.Test
         {
             var mock = new Mock<IKeyVaultWrappingClient>();
             mock.Setup(client => client.UnwrapKeyAsync("KeyId", JsonWebKeyEncryptionAlgorithm.RSAOAEP, It.IsAny<byte[]>()))
-                .Returns<string, string, byte[]>((_, __, data) => Task.FromResult(new KeyOperationResult(null, data.Reverse().ToArray())));
+                .Returns<string, string, byte[]>((_, __, data) => Task.FromResult(new KeyOperationResult(null, data.Reverse().ToArray())))
+                .Verifiable();
 
             var serviceCollection = new ServiceCollection();
             serviceCollection.AddSingleton(mock.Object);
@@ -51,13 +52,14 @@ namespace Microsoft.AspNetCore.DataProtection.Azure.KeyVault.Test
             var encryptor = new AzureKeyVaultXmlDecryptor(serviceCollection.BuildServiceProvider());
 
             var result = encryptor.Decrypt(XElement.Parse(
-@"<encryptedKey>
-          <kid>KeyId</kid>
-          <key>Dw4NDAsKCQgHBgUEAwIBAA==</key>
-          <iv>AAECAwQFBgcICQoLDA0ODw==</iv>
-          <value>VfLYL2prdymawfucH3Goso0zkPbQ4/GKqUsj2TRtLzsBPz7p7cL1SQaY6I29xSlsPQf6IjxHSz4sDJ427GvlLQ==</value>
-        </encryptedKey>"));
+                @"<encryptedKey>
+                  <kid>KeyId</kid>
+                  <key>Dw4NDAsKCQgHBgUEAwIBAA==</key>
+                  <iv>AAECAwQFBgcICQoLDA0ODw==</iv>
+                  <value>VfLYL2prdymawfucH3Goso0zkPbQ4/GKqUsj2TRtLzsBPz7p7cL1SQaY6I29xSlsPQf6IjxHSz4sDJ427GvlLQ==</value>
+                </encryptedKey>"));
 
+            mock.VerifyAll();
             Assert.NotNull(result);
             Assert.Equal("<Element />", result.ToString());
         }

@@ -9,12 +9,12 @@ using System.Xml.Linq;
 using Microsoft.AspNetCore.DataProtection.XmlEncryption;
 using Microsoft.Azure.KeyVault.WebKey;
 
-namespace Microsoft.AspNetCore.DataProtection.Azure.KeyVault
+namespace Microsoft.AspNetCore.DataProtection.AzureKeyVault
 {
     internal class AzureKeyVaultXmlEncryptor : IXmlEncryptor
     {
         internal static string DefaultKeyEncryption = JsonWebKeyEncryptionAlgorithm.RSAOAEP;
-        internal static Func<SymmetricAlgorithm> DefaultSymmetricAlgorithmFactory = () => Aes.Create();
+        internal static Func<SymmetricAlgorithm> DefaultSymmetricAlgorithmFactory = Aes.Create;
 
         private readonly RandomNumberGenerator _randomNumberGenerator;
         private readonly IKeyVaultWrappingClient _client;

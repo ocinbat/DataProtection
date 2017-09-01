@@ -18,21 +18,16 @@ namespace ConsoleApplication
             builder.AddJsonFile("settings.json");
             var config = builder.Build();
 
-#if NET461
             var store = new X509Store(StoreLocation.CurrentUser);
             store.Open(OpenFlags.ReadOnly);
             var cert = store.Certificates.Find(X509FindType.FindByThumbprint, config["CertificateThumbprint"], false);
-#endif
+
 
             var serviceCollection = new ServiceCollection();
             serviceCollection.AddLogging();
             serviceCollection.AddDataProtection()
                 .PersistKeysToFileSystem(new DirectoryInfo("."))
-#if NET461
                 .ProtectKeysWithAzureKeyVault(config["KeyId"], config["ClientId"], cert.OfType<X509Certificate2>().Single());
-#else
-                .ProtectKeysWithAzureKeyVault(config["KeyId"], config["ClientId"], config["ClientSecret"]);
-#endif
 
             var serviceProvider = serviceCollection.BuildServiceProvider();
 

@@ -4,8 +4,8 @@
 using System;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.DataProtection.Azure.KeyVault;
-using Microsoft.AspNetCore.DataProtection.XmlEncryption;
+using Microsoft.AspNetCore.DataProtection.AzureKeyVault;
+using Microsoft.AspNetCore.DataProtection.KeyManagement;
 using Microsoft.Azure.KeyVault;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -17,7 +17,6 @@ namespace Microsoft.AspNetCore.DataProtection
     /// </summary>
     public static class AzureDataProtectionBuilderExtensions
     {
-#if NET461
         /// <summary>
         /// Configures the data protection system to protect keys with specified key in Azure KeyVault.
         /// </summary>
@@ -49,7 +48,6 @@ namespace Microsoft.AspNetCore.DataProtection
             var result = await authContext.AcquireTokenAsync(resource, new ClientAssertionCertificate(clientId, certificate));
             return result.AccessToken;
         }
-#endif
 
         /// <summary>
         /// Configures the data protection system to protect keys with specified key in Azure KeyVault.
@@ -109,7 +107,11 @@ namespace Microsoft.AspNetCore.DataProtection
             var vaultClientWrapper = new KeyVaultClientWrapper(client);
 
             builder.Services.AddSingleton<IKeyVaultWrappingClient>(vaultClientWrapper);
-            builder.Services.AddSingleton<IXmlEncryptor>(services => new AzureKeyVaultXmlEncryptor(vaultClientWrapper, keyIdentifier));
+            builder.Services.Configure<KeyManagementOptions>(options =>
+            {
+                options.XmlEncryptor = new AzureKeyVaultXmlEncryptor(vaultClientWrapper, keyIdentifier);
+            });
+
             return builder;
         }
     }
