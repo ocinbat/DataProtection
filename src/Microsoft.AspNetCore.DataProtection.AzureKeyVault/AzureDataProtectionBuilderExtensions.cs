@@ -27,9 +27,9 @@ namespace Microsoft.AspNetCore.DataProtection
         /// <returns>The value <paramref name="builder"/>.</returns>
         public static IDataProtectionBuilder ProtectKeysWithAzureKeyVault(this IDataProtectionBuilder builder, string keyIdentifier, string clientId, X509Certificate2 certificate)
         {
-            if (clientId == null)
+            if (string.IsNullOrEmpty(clientId))
             {
-                throw new ArgumentNullException(nameof(clientId));
+                throw new ArgumentException(nameof(clientId));
             }
             if (certificate == null)
             {
@@ -59,11 +59,11 @@ namespace Microsoft.AspNetCore.DataProtection
         /// <returns>The value <paramref name="builder"/>.</returns>
         public static IDataProtectionBuilder ProtectKeysWithAzureKeyVault(this IDataProtectionBuilder builder, string keyIdentifier, string clientId, string clientSecret)
         {
-            if (clientId == null)
+            if (string.IsNullOrEmpty(clientId))
             {
                 throw new ArgumentNullException(nameof(clientId));
             }
-            if (clientSecret == null)
+            if (string.IsNullOrEmpty(clientSecret))
             {
                 throw new ArgumentNullException(nameof(clientSecret));
             }
