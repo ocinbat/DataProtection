@@ -14,10 +14,15 @@ using Microsoft.Win32;
 
 namespace Microsoft.AspNetCore.DataProtection
 {
+    internal interface IRegistryPolicyResolver
+    {
+        RegistryPolicy ResolvePolicy();
+    }
+
     /// <summary>
     /// A type which allows reading policy from the system registry.
     /// </summary>
-    internal sealed class RegistryPolicyResolver
+    internal sealed class RegistryPolicyResolver: IRegistryPolicyResolver
     {
         private readonly Func<RegistryKey> _getPolicyRegKey;
         private readonly IActivator _activator;
@@ -88,13 +93,7 @@ namespace Microsoft.AspNetCore.DataProtection
             return sinks;
         }
 
-        /// <summary>
-        /// Returns a <see cref="RegistryPolicy"/> from the default registry location.
-        /// </summary>
-        public static RegistryPolicy ResolveDefaultPolicy(IActivator activator)
-            => new RegistryPolicyResolver(activator).ResolvePolicy();
-
-        internal RegistryPolicy ResolvePolicy()
+        public RegistryPolicy ResolvePolicy()
         {
             using (var registryKey = _getPolicyRegKey())
             {
