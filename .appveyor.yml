@@ -1,4 +1,4 @@
-init:
+﻿init:
   - git config --global core.autocrlf true
 branches:
   only:
@@ -8,7 +8,7 @@ branches:
     - /^(.*\/)?ci-.*$/
     - /^rel\/.*/
 build_script:
-  - ps: .\run.ps1 default-build
+  - ps: .\build.ps1
 clone_depth: 1
 environment:
   global:
