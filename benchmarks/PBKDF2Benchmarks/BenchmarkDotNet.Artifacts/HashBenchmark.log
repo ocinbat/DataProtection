@@ -1,0 +1,1623 @@
+// ***** BenchmarkRunner: Start   *****
+// Found benchmarks:
+//   HashBenchmark.Rfc2898DeriveBytesSHA512: Job-RSCSGR(RemoveOutliers=False, Runtime=Core, Server=True, Toolchain=.NET Core 2.1, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5) [Iterations=1000]
+//   HashBenchmark.KeyDerivationPBKDF2SHA512: Job-RSCSGR(RemoveOutliers=False, Runtime=Core, Server=True, Toolchain=.NET Core 2.1, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5) [Iterations=1000]
+//   HashBenchmark.Rfc2898DeriveBytesSHA512: Job-RSCSGR(RemoveOutliers=False, Runtime=Core, Server=True, Toolchain=.NET Core 2.1, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5) [Iterations=10000]
+//   HashBenchmark.KeyDerivationPBKDF2SHA512: Job-RSCSGR(RemoveOutliers=False, Runtime=Core, Server=True, Toolchain=.NET Core 2.1, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5) [Iterations=10000]
+//   HashBenchmark.Rfc2898DeriveBytesSHA512: Job-RSCSGR(RemoveOutliers=False, Runtime=Core, Server=True, Toolchain=.NET Core 2.1, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5) [Iterations=100000]
+//   HashBenchmark.KeyDerivationPBKDF2SHA512: Job-RSCSGR(RemoveOutliers=False, Runtime=Core, Server=True, Toolchain=.NET Core 2.1, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5) [Iterations=100000]
+
+// Validating benchmarks:
+// **************************
+// Benchmark: HashBenchmark.Rfc2898DeriveBytesSHA512: Job-RSCSGR(RemoveOutliers=False, Runtime=Core, Server=True, Toolchain=.NET Core 2.1, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5) [Iterations=1000]
+// *** Generate *** 
+// Result = Success
+// BinariesDirectoryPath = /Users/namc/dev/aspnet/DataProtection/benchmarks/PBKDF2Benchmarks/bin/Release/netcoreapp2.1/6dc5ed3e-a03d-4afc-a99f-3f26f507c23c/bin/Release/netcoreapp2.1
+
+// *** Build ***
+// dotnet restore took 2.73s
+// dotnet build took 6.33s
+// Result = Success
+
+// *** Execute ***
+// Launch: 1 / 3
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-JAFGWU(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+Pilot  1: 16 op, 32855000.00 ns, 2.0534 ms/op
+Pilot  2: 32 op, 74196000.00 ns, 2.3186 ms/op
+Pilot  3: 64 op, 143392000.00 ns, 2.2405 ms/op
+Pilot  4: 128 op, 280868000.00 ns, 2.1943 ms/op
+Pilot  5: 256 op, 555786000.00 ns, 2.1710 ms/op
+
+IdleWarmup  1: 256 op, 6000.00 ns, 23.4375 ns/op
+IdleWarmup  2: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleWarmup  3: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleWarmup  4: 256 op, 2000.00 ns, 7.8125 ns/op
+IdleWarmup  5: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleWarmup  6: 256 op, 4000.00 ns, 15.6250 ns/op
+
+IdleTarget  1: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget  2: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget  3: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget  4: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget  5: 256 op, 2000.00 ns, 7.8125 ns/op
+IdleTarget  6: 256 op, 5000.00 ns, 19.5313 ns/op
+IdleTarget  7: 256 op, 5000.00 ns, 19.5313 ns/op
+IdleTarget  8: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget  9: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 10: 256 op, 5000.00 ns, 19.5313 ns/op
+IdleTarget 11: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 12: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget 13: 256 op, 12000.00 ns, 46.8750 ns/op
+IdleTarget 14: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 15: 256 op, 9000.00 ns, 35.1563 ns/op
+IdleTarget 16: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 17: 256 op, 5000.00 ns, 19.5313 ns/op
+IdleTarget 18: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget 19: 256 op, 5000.00 ns, 19.5313 ns/op
+IdleTarget 20: 256 op, 4000.00 ns, 15.6250 ns/op
+
+MainWarmup  1: 256 op, 561359000.00 ns, 2.1928 ms/op
+MainWarmup  2: 256 op, 546322000.00 ns, 2.1341 ms/op
+MainWarmup  3: 256 op, 544083000.00 ns, 2.1253 ms/op
+MainWarmup  4: 256 op, 545919000.00 ns, 2.1325 ms/op
+MainWarmup  5: 256 op, 545654000.00 ns, 2.1315 ms/op
+
+MainTarget  1: 256 op, 550872000.00 ns, 2.1518 ms/op
+MainTarget  2: 256 op, 610906000.00 ns, 2.3864 ms/op
+MainTarget  3: 256 op, 558862000.00 ns, 2.1831 ms/op
+MainTarget  4: 256 op, 546575000.00 ns, 2.1351 ms/op
+MainTarget  5: 256 op, 563764000.00 ns, 2.2022 ms/op
+MainTarget  6: 256 op, 537291000.00 ns, 2.0988 ms/op
+MainTarget  7: 256 op, 534666000.00 ns, 2.0885 ms/op
+MainTarget  8: 256 op, 581401000.00 ns, 2.2711 ms/op
+MainTarget  9: 256 op, 937966000.00 ns, 3.6639 ms/op
+MainTarget 10: 256 op, 890685000.00 ns, 3.4792 ms/op
+
+Result  1: 256 op, 550867550.00 ns, 2.1518 ms/op
+Result  2: 256 op, 610901550.00 ns, 2.3863 ms/op
+Result  3: 256 op, 558857550.00 ns, 2.1830 ms/op
+Result  4: 256 op, 546570550.00 ns, 2.1350 ms/op
+Result  5: 256 op, 563759550.00 ns, 2.2022 ms/op
+Result  6: 256 op, 537286550.00 ns, 2.0988 ms/op
+Result  7: 256 op, 534661550.00 ns, 2.0885 ms/op
+Result  8: 256 op, 581396550.00 ns, 2.2711 ms/op
+Result  9: 256 op, 937961550.00 ns, 3.6639 ms/op
+Result 10: 256 op, 890680550.00 ns, 3.4792 ms/op
+GC:  0 0 0 0 2560
+
+// Launch: 2 / 3
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-PWGJKB(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+Pilot  1: 16 op, 37089000.00 ns, 2.3181 ms/op
+Pilot  2: 32 op, 79425000.00 ns, 2.4820 ms/op
+Pilot  3: 64 op, 146659000.00 ns, 2.2915 ms/op
+Pilot  4: 128 op, 281485000.00 ns, 2.1991 ms/op
+Pilot  5: 256 op, 755717000.00 ns, 2.9520 ms/op
+
+IdleWarmup  1: 256 op, 10000.00 ns, 39.0625 ns/op
+IdleWarmup  2: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleWarmup  3: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleWarmup  4: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleWarmup  5: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleWarmup  6: 256 op, 4000.00 ns, 15.6250 ns/op
+
+IdleTarget  1: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget  2: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget  3: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget  4: 256 op, 11000.00 ns, 42.9688 ns/op
+IdleTarget  5: 256 op, 7000.00 ns, 27.3438 ns/op
+IdleTarget  6: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget  7: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget  8: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget  9: 256 op, 82000.00 ns, 320.3125 ns/op
+IdleTarget 10: 256 op, 6000.00 ns, 23.4375 ns/op
+IdleTarget 11: 256 op, 2000.00 ns, 7.8125 ns/op
+IdleTarget 12: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget 13: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 14: 256 op, 15000.00 ns, 58.5938 ns/op
+IdleTarget 15: 256 op, 5000.00 ns, 19.5313 ns/op
+IdleTarget 16: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget 17: 256 op, 10000.00 ns, 39.0625 ns/op
+IdleTarget 18: 256 op, 5000.00 ns, 19.5313 ns/op
+IdleTarget 19: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 20: 256 op, 3000.00 ns, 11.7188 ns/op
+
+MainWarmup  1: 256 op, 1093951000.00 ns, 4.2732 ms/op
+MainWarmup  2: 256 op, 1597849000.00 ns, 6.2416 ms/op
+MainWarmup  3: 256 op, 896320000.00 ns, 3.5013 ms/op
+MainWarmup  4: 256 op, 703587000.00 ns, 2.7484 ms/op
+MainWarmup  5: 256 op, 640662000.00 ns, 2.5026 ms/op
+
+MainTarget  1: 256 op, 783528000.00 ns, 3.0607 ms/op
+MainTarget  2: 256 op, 878824000.00 ns, 3.4329 ms/op
+MainTarget  3: 256 op, 706757000.00 ns, 2.7608 ms/op
+MainTarget  4: 256 op, 605108000.00 ns, 2.3637 ms/op
+MainTarget  5: 256 op, 608317000.00 ns, 2.3762 ms/op
+MainTarget  6: 256 op, 596754000.00 ns, 2.3311 ms/op
+MainTarget  7: 256 op, 590015000.00 ns, 2.3047 ms/op
+MainTarget  8: 256 op, 600781000.00 ns, 2.3468 ms/op
+MainTarget  9: 256 op, 557082000.00 ns, 2.1761 ms/op
+MainTarget 10: 256 op, 623639000.00 ns, 2.4361 ms/op
+
+Result  1: 256 op, 783519000.00 ns, 3.0606 ms/op
+Result  2: 256 op, 878815000.00 ns, 3.4329 ms/op
+Result  3: 256 op, 706748000.00 ns, 2.7607 ms/op
+Result  4: 256 op, 605099000.00 ns, 2.3637 ms/op
+Result  5: 256 op, 608308000.00 ns, 2.3762 ms/op
+Result  6: 256 op, 596745000.00 ns, 2.3310 ms/op
+Result  7: 256 op, 590006000.00 ns, 2.3047 ms/op
+Result  8: 256 op, 600772000.00 ns, 2.3468 ms/op
+Result  9: 256 op, 557073000.00 ns, 2.1761 ms/op
+Result 10: 256 op, 623630000.00 ns, 2.4361 ms/op
+GC:  0 0 0 0 2560
+
+// Launch: 3 / 3
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-KCJOCO(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+Pilot  1: 16 op, 44425000.00 ns, 2.7766 ms/op
+Pilot  2: 32 op, 79332000.00 ns, 2.4791 ms/op
+Pilot  3: 64 op, 143593000.00 ns, 2.2436 ms/op
+Pilot  4: 128 op, 291381000.00 ns, 2.2764 ms/op
+Pilot  5: 256 op, 560388000.00 ns, 2.1890 ms/op
+
+IdleWarmup  1: 256 op, 6000.00 ns, 23.4375 ns/op
+IdleWarmup  2: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleWarmup  3: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleWarmup  4: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleWarmup  5: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleWarmup  6: 256 op, 3000.00 ns, 11.7188 ns/op
+
+IdleTarget  1: 256 op, 17000.00 ns, 66.4063 ns/op
+IdleTarget  2: 256 op, 2000.00 ns, 7.8125 ns/op
+IdleTarget  3: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget  4: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget  5: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget  6: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget  7: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget  8: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget  9: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 10: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 11: 256 op, 2000.00 ns, 7.8125 ns/op
+IdleTarget 12: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget 13: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 14: 256 op, 2000.00 ns, 7.8125 ns/op
+IdleTarget 15: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 16: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget 17: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget 18: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget 19: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 20: 256 op, 3000.00 ns, 11.7188 ns/op
+
+MainWarmup  1: 256 op, 562195000.00 ns, 2.1961 ms/op
+MainWarmup  2: 256 op, 560438000.00 ns, 2.1892 ms/op
+MainWarmup  3: 256 op, 616711000.00 ns, 2.4090 ms/op
+MainWarmup  4: 256 op, 625180000.00 ns, 2.4421 ms/op
+MainWarmup  5: 256 op, 585698000.00 ns, 2.2879 ms/op
+
+MainTarget  1: 256 op, 568596000.00 ns, 2.2211 ms/op
+MainTarget  2: 256 op, 631596000.00 ns, 2.4672 ms/op
+MainTarget  3: 256 op, 598293000.00 ns, 2.3371 ms/op
+MainTarget  4: 256 op, 576190000.00 ns, 2.2507 ms/op
+MainTarget  5: 256 op, 553785000.00 ns, 2.1632 ms/op
+MainTarget  6: 256 op, 542882000.00 ns, 2.1206 ms/op
+MainTarget  7: 256 op, 536370000.00 ns, 2.0952 ms/op
+MainTarget  8: 256 op, 577141000.00 ns, 2.2545 ms/op
+MainTarget  9: 256 op, 589665000.00 ns, 2.3034 ms/op
+MainTarget 10: 256 op, 1034341000.00 ns, 4.0404 ms/op
+
+Result  1: 256 op, 568592150.00 ns, 2.2211 ms/op
+Result  2: 256 op, 631592150.00 ns, 2.4672 ms/op
+Result  3: 256 op, 598289150.00 ns, 2.3371 ms/op
+Result  4: 256 op, 576186150.00 ns, 2.2507 ms/op
+Result  5: 256 op, 553781150.00 ns, 2.1632 ms/op
+Result  6: 256 op, 542878150.00 ns, 2.1206 ms/op
+Result  7: 256 op, 536366150.00 ns, 2.0952 ms/op
+Result  8: 256 op, 577137150.00 ns, 2.2544 ms/op
+Result  9: 256 op, 589661150.00 ns, 2.3034 ms/op
+Result 10: 256 op, 1034337150.00 ns, 4.0404 ms/op
+GC:  0 0 0 0 2560
+
+
+// Run, Diagnostic
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-UBCTNG(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+// AfterGlobalSetup
+// BeforeMainRun
+// BeforeGlobalCleanup
+Result  1: 256 op, 645230050.00 ns, 2.5204 ms/op
+Result  2: 256 op, 781307050.00 ns, 3.0520 ms/op
+Result  3: 256 op, 620227050.00 ns, 2.4228 ms/op
+Result  4: 256 op, 608696050.00 ns, 2.3777 ms/op
+Result  5: 256 op, 584781050.00 ns, 2.2843 ms/op
+Result  6: 256 op, 732264050.00 ns, 2.8604 ms/op
+Result  7: 256 op, 618527050.00 ns, 2.4161 ms/op
+Result  8: 256 op, 549885050.00 ns, 2.1480 ms/op
+Result  9: 256 op, 535312050.00 ns, 2.0911 ms/op
+Result 10: 256 op, 597499050.00 ns, 2.3340 ms/op
+GC:  0 0 0 2273280 2560
+
+
+Mean = 2.4834 ms, StdErr = 0.0940 ms (3.79%); N = 30, StdDev = 0.5150 ms
+Min = 2.0885 ms, Q1 = 2.1761 ms, Median = 2.3040 ms, Q3 = 2.4361 ms, Max = 4.0404 ms
+IQR = 0.2600 ms, LowerFence = 1.7861 ms, UpperFence = 2.8260 ms
+ConfidenceInterval = [2.1393 ms; 2.8275 ms] (CI 99.9%), Margin = 0.3441 ms (13.85% of Mean)
+Skewness = 1.7, Kurtosis = 4.69
+
+
+// **************************
+// Benchmark: HashBenchmark.KeyDerivationPBKDF2SHA512: Job-RSCSGR(RemoveOutliers=False, Runtime=Core, Server=True, Toolchain=.NET Core 2.1, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5) [Iterations=1000]
+// *** Generate *** 
+// Result = Success
+// BinariesDirectoryPath = /Users/namc/dev/aspnet/DataProtection/benchmarks/PBKDF2Benchmarks/bin/Release/netcoreapp2.1/d74001d6-b8a8-42e7-9591-5ae8a4ed7a54/bin/Release/netcoreapp2.1
+
+// *** Build ***
+// dotnet restore took 2.31s
+// dotnet build took 6.55s
+// Result = Success
+
+// *** Execute ***
+// Launch: 1 / 3
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-HXTVJR(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+Pilot  1: 16 op, 36715000.00 ns, 2.2947 ms/op
+Pilot  2: 32 op, 75081000.00 ns, 2.3463 ms/op
+Pilot  3: 64 op, 162864000.00 ns, 2.5448 ms/op
+Pilot  4: 128 op, 315563000.00 ns, 2.4653 ms/op
+Pilot  5: 256 op, 775739000.00 ns, 3.0302 ms/op
+
+IdleWarmup  1: 256 op, 10000.00 ns, 39.0625 ns/op
+IdleWarmup  2: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleWarmup  3: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleWarmup  4: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleWarmup  5: 256 op, 2000.00 ns, 7.8125 ns/op
+IdleWarmup  6: 256 op, 4000.00 ns, 15.6250 ns/op
+
+IdleTarget  1: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget  2: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget  3: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget  4: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget  5: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget  6: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget  7: 256 op, 5000.00 ns, 19.5313 ns/op
+IdleTarget  8: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget  9: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget 10: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget 11: 256 op, 6000.00 ns, 23.4375 ns/op
+IdleTarget 12: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget 13: 256 op, 5000.00 ns, 19.5313 ns/op
+IdleTarget 14: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 15: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget 16: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget 17: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget 18: 256 op, 5000.00 ns, 19.5313 ns/op
+IdleTarget 19: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget 20: 256 op, 3000.00 ns, 11.7188 ns/op
+
+MainWarmup  1: 256 op, 623600000.00 ns, 2.4359 ms/op
+MainWarmup  2: 256 op, 794551000.00 ns, 3.1037 ms/op
+MainWarmup  3: 256 op, 621589000.00 ns, 2.4281 ms/op
+MainWarmup  4: 256 op, 580601000.00 ns, 2.2680 ms/op
+MainWarmup  5: 256 op, 672537000.00 ns, 2.6271 ms/op
+
+MainTarget  1: 256 op, 615481000.00 ns, 2.4042 ms/op
+MainTarget  2: 256 op, 562973000.00 ns, 2.1991 ms/op
+MainTarget  3: 256 op, 639179000.00 ns, 2.4968 ms/op
+MainTarget  4: 256 op, 604236000.00 ns, 2.3603 ms/op
+MainTarget  5: 256 op, 625375000.00 ns, 2.4429 ms/op
+MainTarget  6: 256 op, 770907000.00 ns, 3.0114 ms/op
+MainTarget  7: 256 op, 813144000.00 ns, 3.1763 ms/op
+MainTarget  8: 256 op, 835406000.00 ns, 3.2633 ms/op
+MainTarget  9: 256 op, 636753000.00 ns, 2.4873 ms/op
+MainTarget 10: 256 op, 592100000.00 ns, 2.3129 ms/op
+
+Result  1: 256 op, 615477050.00 ns, 2.4042 ms/op
+Result  2: 256 op, 562969050.00 ns, 2.1991 ms/op
+Result  3: 256 op, 639175050.00 ns, 2.4968 ms/op
+Result  4: 256 op, 604232050.00 ns, 2.3603 ms/op
+Result  5: 256 op, 625371050.00 ns, 2.4429 ms/op
+Result  6: 256 op, 770903050.00 ns, 3.0113 ms/op
+Result  7: 256 op, 813140050.00 ns, 3.1763 ms/op
+Result  8: 256 op, 835402050.00 ns, 3.2633 ms/op
+Result  9: 256 op, 636749050.00 ns, 2.4873 ms/op
+Result 10: 256 op, 592096050.00 ns, 2.3129 ms/op
+GC:  10 0 0 0 2560
+
+// Launch: 2 / 3
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-TBMIMG(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+Pilot  1: 16 op, 37251000.00 ns, 2.3282 ms/op
+Pilot  2: 32 op, 72110000.00 ns, 2.2534 ms/op
+Pilot  3: 64 op, 154685000.00 ns, 2.4170 ms/op
+Pilot  4: 128 op, 372969000.00 ns, 2.9138 ms/op
+Pilot  5: 256 op, 846139000.00 ns, 3.3052 ms/op
+
+IdleWarmup  1: 256 op, 10000.00 ns, 39.0625 ns/op
+IdleWarmup  2: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleWarmup  3: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleWarmup  4: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleWarmup  5: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleWarmup  6: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleWarmup  7: 256 op, 3000.00 ns, 11.7188 ns/op
+
+IdleTarget  1: 256 op, 5000.00 ns, 19.5313 ns/op
+IdleTarget  2: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget  3: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget  4: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget  5: 256 op, 6000.00 ns, 23.4375 ns/op
+IdleTarget  6: 256 op, 5000.00 ns, 19.5313 ns/op
+IdleTarget  7: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget  8: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget  9: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget 10: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 11: 256 op, 2000.00 ns, 7.8125 ns/op
+IdleTarget 12: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget 13: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 14: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget 15: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 16: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget 17: 256 op, 5000.00 ns, 19.5313 ns/op
+IdleTarget 18: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 19: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 20: 256 op, 4000.00 ns, 15.6250 ns/op
+
+MainWarmup  1: 256 op, 598806000.00 ns, 2.3391 ms/op
+MainWarmup  2: 256 op, 612469000.00 ns, 2.3925 ms/op
+MainWarmup  3: 256 op, 768937000.00 ns, 3.0037 ms/op
+MainWarmup  4: 256 op, 631237000.00 ns, 2.4658 ms/op
+MainWarmup  5: 256 op, 634924000.00 ns, 2.4802 ms/op
+
+MainTarget  1: 256 op, 652689000.00 ns, 2.5496 ms/op
+MainTarget  2: 256 op, 577093000.00 ns, 2.2543 ms/op
+MainTarget  3: 256 op, 573553000.00 ns, 2.2404 ms/op
+MainTarget  4: 256 op, 585659000.00 ns, 2.2877 ms/op
+MainTarget  5: 256 op, 575981000.00 ns, 2.2499 ms/op
+MainTarget  6: 256 op, 567514000.00 ns, 2.2169 ms/op
+MainTarget  7: 256 op, 590548000.00 ns, 2.3068 ms/op
+MainTarget  8: 256 op, 575340000.00 ns, 2.2474 ms/op
+MainTarget  9: 256 op, 605712000.00 ns, 2.3661 ms/op
+MainTarget 10: 256 op, 769950000.00 ns, 3.0076 ms/op
+
+Result  1: 256 op, 652685250.00 ns, 2.5496 ms/op
+Result  2: 256 op, 577089250.00 ns, 2.2543 ms/op
+Result  3: 256 op, 573549250.00 ns, 2.2404 ms/op
+Result  4: 256 op, 585655250.00 ns, 2.2877 ms/op
+Result  5: 256 op, 575977250.00 ns, 2.2499 ms/op
+Result  6: 256 op, 567510250.00 ns, 2.2168 ms/op
+Result  7: 256 op, 590544250.00 ns, 2.3068 ms/op
+Result  8: 256 op, 575336250.00 ns, 2.2474 ms/op
+Result  9: 256 op, 605708250.00 ns, 2.3660 ms/op
+Result 10: 256 op, 769946250.00 ns, 3.0076 ms/op
+GC:  10 0 0 0 2560
+
+// Launch: 3 / 3
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-KZQCVU(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+Pilot  1: 16 op, 37667000.00 ns, 2.3542 ms/op
+Pilot  2: 32 op, 84619000.00 ns, 2.6443 ms/op
+Pilot  3: 64 op, 183855000.00 ns, 2.8727 ms/op
+Pilot  4: 128 op, 493455000.00 ns, 3.8551 ms/op
+Pilot  5: 256 op, 692722000.00 ns, 2.7059 ms/op
+
+IdleWarmup  1: 256 op, 9000.00 ns, 35.1563 ns/op
+IdleWarmup  2: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleWarmup  3: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleWarmup  4: 256 op, 2000.00 ns, 7.8125 ns/op
+IdleWarmup  5: 256 op, 5000.00 ns, 19.5313 ns/op
+IdleWarmup  6: 256 op, 2000.00 ns, 7.8125 ns/op
+IdleWarmup  7: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleWarmup  8: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleWarmup  9: 256 op, 3000.00 ns, 11.7188 ns/op
+
+IdleTarget  1: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget  2: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget  3: 256 op, 2000.00 ns, 7.8125 ns/op
+IdleTarget  4: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget  5: 256 op, 2000.00 ns, 7.8125 ns/op
+IdleTarget  6: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget  7: 256 op, 830000.00 ns, 3.2422 us/op
+IdleTarget  8: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget  9: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget 10: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget 11: 256 op, 6000.00 ns, 23.4375 ns/op
+IdleTarget 12: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 13: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 14: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 15: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 16: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 17: 256 op, 3000.00 ns, 11.7188 ns/op
+IdleTarget 18: 256 op, 4000.00 ns, 15.6250 ns/op
+IdleTarget 19: 256 op, 2000.00 ns, 7.8125 ns/op
+IdleTarget 20: 256 op, 4000.00 ns, 15.6250 ns/op
+
+MainWarmup  1: 256 op, 649328000.00 ns, 2.5364 ms/op
+MainWarmup  2: 256 op, 644899000.00 ns, 2.5191 ms/op
+MainWarmup  3: 256 op, 672671000.00 ns, 2.6276 ms/op
+MainWarmup  4: 256 op, 702478000.00 ns, 2.7441 ms/op
+MainWarmup  5: 256 op, 841219000.00 ns, 3.2860 ms/op
+
+MainTarget  1: 256 op, 693403000.00 ns, 2.7086 ms/op
+MainTarget  2: 256 op, 773274000.00 ns, 3.0206 ms/op
+MainTarget  3: 256 op, 744144000.00 ns, 2.9068 ms/op
+MainTarget  4: 256 op, 678687000.00 ns, 2.6511 ms/op
+MainTarget  5: 256 op, 793482000.00 ns, 3.0995 ms/op
+MainTarget  6: 256 op, 667356000.00 ns, 2.6069 ms/op
+MainTarget  7: 256 op, 628542000.00 ns, 2.4552 ms/op
+MainTarget  8: 256 op, 635785000.00 ns, 2.4835 ms/op
+MainTarget  9: 256 op, 601074000.00 ns, 2.3479 ms/op
+MainTarget 10: 256 op, 613813000.00 ns, 2.3977 ms/op
+
+Result  1: 256 op, 693358400.00 ns, 2.7084 ms/op
+Result  2: 256 op, 773229400.00 ns, 3.0204 ms/op
+Result  3: 256 op, 744099400.00 ns, 2.9066 ms/op
+Result  4: 256 op, 678642400.00 ns, 2.6509 ms/op
+Result  5: 256 op, 793437400.00 ns, 3.0994 ms/op
+Result  6: 256 op, 667311400.00 ns, 2.6067 ms/op
+Result  7: 256 op, 628497400.00 ns, 2.4551 ms/op
+Result  8: 256 op, 635740400.00 ns, 2.4834 ms/op
+Result  9: 256 op, 601029400.00 ns, 2.3478 ms/op
+Result 10: 256 op, 613768400.00 ns, 2.3975 ms/op
+GC:  10 0 0 0 2560
+
+
+// Run, Diagnostic
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-UQGEGB(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+// AfterGlobalSetup
+// BeforeMainRun
+// BeforeGlobalCleanup
+Result  1: 256 op, 588351750.00 ns, 2.2982 ms/op
+Result  2: 256 op, 615347750.00 ns, 2.4037 ms/op
+Result  3: 256 op, 674787750.00 ns, 2.6359 ms/op
+Result  4: 256 op, 800923750.00 ns, 3.1286 ms/op
+Result  5: 256 op, 709468750.00 ns, 2.7714 ms/op
+Result  6: 256 op, 595564750.00 ns, 2.3264 ms/op
+Result  7: 256 op, 589624750.00 ns, 2.3032 ms/op
+Result  8: 256 op, 581837750.00 ns, 2.2728 ms/op
+Result  9: 256 op, 583575750.00 ns, 2.2796 ms/op
+Result 10: 256 op, 576235750.00 ns, 2.2509 ms/op
+GC:  10 0 0 451850240 2560
+
+
+Mean = 2.5519 ms, StdErr = 0.0585 ms (2.29%); N = 30, StdDev = 0.3207 ms
+Min = 2.1991 ms, Q1 = 2.3068 ms, Median = 2.4490 ms, Q3 = 2.7084 ms, Max = 3.2633 ms
+IQR = 0.4016 ms, LowerFence = 1.7044 ms, UpperFence = 3.3109 ms
+ConfidenceInterval = [2.3377 ms; 2.7662 ms] (CI 99.9%), Margin = 0.2142 ms (8.40% of Mean)
+Skewness = 0.85, Kurtosis = 2.3
+
+
+// **************************
+// Benchmark: HashBenchmark.Rfc2898DeriveBytesSHA512: Job-RSCSGR(RemoveOutliers=False, Runtime=Core, Server=True, Toolchain=.NET Core 2.1, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5) [Iterations=10000]
+// *** Generate *** 
+// Result = Success
+// BinariesDirectoryPath = /Users/namc/dev/aspnet/DataProtection/benchmarks/PBKDF2Benchmarks/bin/Release/netcoreapp2.1/0b68ae9f-c996-405d-a85e-ebfcae2ea429/bin/Release/netcoreapp2.1
+
+// *** Build ***
+// dotnet restore took 2.3s
+// dotnet build took 6.24s
+// Result = Success
+
+// *** Execute ***
+// Launch: 1 / 3
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-TGASFS(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+Pilot  1: 16 op, 344638000.00 ns, 21.5399 ms/op
+Pilot  2: 32 op, 691625000.00 ns, 21.6133 ms/op
+
+IdleWarmup  1: 32 op, 7000.00 ns, 218.7500 ns/op
+IdleWarmup  2: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleWarmup  3: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleWarmup  4: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleWarmup  5: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleWarmup  6: 32 op, 2000.00 ns, 62.5000 ns/op
+
+IdleTarget  1: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  2: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  3: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  4: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  5: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  6: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget  7: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  8: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  9: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 10: 32 op, 1000.00 ns, 31.2500 ns/op
+IdleTarget 11: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 12: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 13: 32 op, 1000.00 ns, 31.2500 ns/op
+IdleTarget 14: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 15: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 16: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 17: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 18: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 19: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 20: 32 op, 2000.00 ns, 62.5000 ns/op
+
+MainWarmup  1: 32 op, 678881000.00 ns, 21.2150 ms/op
+MainWarmup  2: 32 op, 673517000.00 ns, 21.0474 ms/op
+MainWarmup  3: 32 op, 688227000.00 ns, 21.5071 ms/op
+MainWarmup  4: 32 op, 667375000.00 ns, 20.8555 ms/op
+MainWarmup  5: 32 op, 680988000.00 ns, 21.2809 ms/op
+
+MainTarget  1: 32 op, 685916000.00 ns, 21.4349 ms/op
+MainTarget  2: 32 op, 703257000.00 ns, 21.9768 ms/op
+MainTarget  3: 32 op, 681920000.00 ns, 21.3100 ms/op
+MainTarget  4: 32 op, 676680000.00 ns, 21.1463 ms/op
+MainTarget  5: 32 op, 684894000.00 ns, 21.4029 ms/op
+MainTarget  6: 32 op, 676992000.00 ns, 21.1560 ms/op
+MainTarget  7: 32 op, 679379000.00 ns, 21.2306 ms/op
+MainTarget  8: 32 op, 677470000.00 ns, 21.1709 ms/op
+MainTarget  9: 32 op, 676529000.00 ns, 21.1415 ms/op
+MainTarget 10: 32 op, 669166000.00 ns, 20.9114 ms/op
+
+Result  1: 32 op, 685914050.00 ns, 21.4348 ms/op
+Result  2: 32 op, 703255050.00 ns, 21.9767 ms/op
+Result  3: 32 op, 681918050.00 ns, 21.3099 ms/op
+Result  4: 32 op, 676678050.00 ns, 21.1462 ms/op
+Result  5: 32 op, 684892050.00 ns, 21.4029 ms/op
+Result  6: 32 op, 676990050.00 ns, 21.1559 ms/op
+Result  7: 32 op, 679377050.00 ns, 21.2305 ms/op
+Result  8: 32 op, 677468050.00 ns, 21.1709 ms/op
+Result  9: 32 op, 676527050.00 ns, 21.1415 ms/op
+Result 10: 32 op, 669164050.00 ns, 20.9114 ms/op
+GC:  0 0 0 0 320
+
+// Launch: 2 / 3
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-NOHICM(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+Pilot  1: 16 op, 336126000.00 ns, 21.0079 ms/op
+Pilot  2: 32 op, 692675000.00 ns, 21.6461 ms/op
+
+IdleWarmup  1: 32 op, 6000.00 ns, 187.5000 ns/op
+IdleWarmup  2: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleWarmup  3: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleWarmup  4: 32 op, 1000.00 ns, 31.2500 ns/op
+IdleWarmup  5: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleWarmup  6: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleWarmup  7: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleWarmup  8: 32 op, 2000.00 ns, 62.5000 ns/op
+
+IdleTarget  1: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  2: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  3: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  4: 32 op, 1000.00 ns, 31.2500 ns/op
+IdleTarget  5: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  6: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  7: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  8: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  9: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget 10: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 11: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget 12: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget 13: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 14: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 15: 32 op, 4000.00 ns, 125.0000 ns/op
+IdleTarget 16: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 17: 32 op, 1000.00 ns, 31.2500 ns/op
+IdleTarget 18: 32 op, 1000.00 ns, 31.2500 ns/op
+IdleTarget 19: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 20: 32 op, 2000.00 ns, 62.5000 ns/op
+
+MainWarmup  1: 32 op, 675001000.00 ns, 21.0938 ms/op
+MainWarmup  2: 32 op, 692250000.00 ns, 21.6328 ms/op
+MainWarmup  3: 32 op, 720442000.00 ns, 22.5138 ms/op
+MainWarmup  4: 32 op, 706893000.00 ns, 22.0904 ms/op
+MainWarmup  5: 32 op, 689273000.00 ns, 21.5398 ms/op
+
+MainTarget  1: 32 op, 679152000.00 ns, 21.2235 ms/op
+MainTarget  2: 32 op, 668147000.00 ns, 20.8796 ms/op
+MainTarget  3: 32 op, 682909000.00 ns, 21.3409 ms/op
+MainTarget  4: 32 op, 675863000.00 ns, 21.1207 ms/op
+MainTarget  5: 32 op, 676827000.00 ns, 21.1508 ms/op
+MainTarget  6: 32 op, 678568000.00 ns, 21.2053 ms/op
+MainTarget  7: 32 op, 687970000.00 ns, 21.4991 ms/op
+MainTarget  8: 32 op, 685326000.00 ns, 21.4164 ms/op
+MainTarget  9: 32 op, 693061000.00 ns, 21.6582 ms/op
+MainTarget 10: 32 op, 686663000.00 ns, 21.4582 ms/op
+
+Result  1: 32 op, 679149900.00 ns, 21.2234 ms/op
+Result  2: 32 op, 668144900.00 ns, 20.8795 ms/op
+Result  3: 32 op, 682906900.00 ns, 21.3408 ms/op
+Result  4: 32 op, 675860900.00 ns, 21.1207 ms/op
+Result  5: 32 op, 676824900.00 ns, 21.1508 ms/op
+Result  6: 32 op, 678565900.00 ns, 21.2052 ms/op
+Result  7: 32 op, 687967900.00 ns, 21.4990 ms/op
+Result  8: 32 op, 685323900.00 ns, 21.4164 ms/op
+Result  9: 32 op, 693058900.00 ns, 21.6581 ms/op
+Result 10: 32 op, 686660900.00 ns, 21.4582 ms/op
+GC:  0 0 0 0 320
+
+// Launch: 3 / 3
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-NSDXBG(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+Pilot  1: 16 op, 337703000.00 ns, 21.1064 ms/op
+Pilot  2: 32 op, 680046000.00 ns, 21.2514 ms/op
+
+IdleWarmup  1: 32 op, 7000.00 ns, 218.7500 ns/op
+IdleWarmup  2: 32 op, 1000.00 ns, 31.2500 ns/op
+IdleWarmup  3: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleWarmup  4: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleWarmup  5: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleWarmup  6: 32 op, 2000.00 ns, 62.5000 ns/op
+
+IdleTarget  1: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  2: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  3: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  4: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  5: 32 op, 5000.00 ns, 156.2500 ns/op
+IdleTarget  6: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  7: 32 op, 1000.00 ns, 31.2500 ns/op
+IdleTarget  8: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget  9: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 10: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 11: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget 12: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget 13: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget 14: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget 15: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget 16: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget 17: 32 op, 1000.00 ns, 31.2500 ns/op
+IdleTarget 18: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 19: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 20: 32 op, 3000.00 ns, 93.7500 ns/op
+
+MainWarmup  1: 32 op, 708328000.00 ns, 22.1353 ms/op
+MainWarmup  2: 32 op, 694219000.00 ns, 21.6943 ms/op
+MainWarmup  3: 32 op, 676822000.00 ns, 21.1507 ms/op
+MainWarmup  4: 32 op, 676939000.00 ns, 21.1543 ms/op
+MainWarmup  5: 32 op, 704660000.00 ns, 22.0206 ms/op
+
+MainTarget  1: 32 op, 796018000.00 ns, 24.8756 ms/op
+MainTarget  2: 32 op, 686577000.00 ns, 21.4555 ms/op
+MainTarget  3: 32 op, 774134000.00 ns, 24.1917 ms/op
+MainTarget  4: 32 op, 729639000.00 ns, 22.8012 ms/op
+MainTarget  5: 32 op, 718879000.00 ns, 22.4650 ms/op
+MainTarget  6: 32 op, 699051000.00 ns, 21.8453 ms/op
+MainTarget  7: 32 op, 720716000.00 ns, 22.5224 ms/op
+MainTarget  8: 32 op, 701912000.00 ns, 21.9348 ms/op
+MainTarget  9: 32 op, 694076000.00 ns, 21.6899 ms/op
+MainTarget 10: 32 op, 680813000.00 ns, 21.2754 ms/op
+
+Result  1: 32 op, 796015550.00 ns, 24.8755 ms/op
+Result  2: 32 op, 686574550.00 ns, 21.4555 ms/op
+Result  3: 32 op, 774131550.00 ns, 24.1916 ms/op
+Result  4: 32 op, 729636550.00 ns, 22.8011 ms/op
+Result  5: 32 op, 718876550.00 ns, 22.4649 ms/op
+Result  6: 32 op, 699048550.00 ns, 21.8453 ms/op
+Result  7: 32 op, 720713550.00 ns, 22.5223 ms/op
+Result  8: 32 op, 701909550.00 ns, 21.9347 ms/op
+Result  9: 32 op, 694073550.00 ns, 21.6898 ms/op
+Result 10: 32 op, 680810550.00 ns, 21.2753 ms/op
+GC:  0 0 0 0 320
+
+
+// Run, Diagnostic
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-DKXXZE(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+// AfterGlobalSetup
+// BeforeMainRun
+// BeforeGlobalCleanup
+Result  1: 32 op, 694520200.00 ns, 21.7038 ms/op
+Result  2: 32 op, 678715200.00 ns, 21.2099 ms/op
+Result  3: 32 op, 679654200.00 ns, 21.2392 ms/op
+Result  4: 32 op, 694713200.00 ns, 21.7098 ms/op
+Result  5: 32 op, 680994200.00 ns, 21.2811 ms/op
+Result  6: 32 op, 693998200.00 ns, 21.6874 ms/op
+Result  7: 32 op, 706544200.00 ns, 22.0795 ms/op
+Result  8: 32 op, 674353200.00 ns, 21.0735 ms/op
+Result  9: 32 op, 686495200.00 ns, 21.4530 ms/op
+Result 10: 32 op, 705629200.00 ns, 22.0509 ms/op
+GC:  0 0 0 284160 320
+
+
+Mean = 21.6963 ms, StdErr = 0.1647 ms (0.76%); N = 30, StdDev = 0.9021 ms
+Min = 20.8795 ms, Q1 = 21.1709 ms, Median = 21.4096 ms, Q3 = 21.8453 ms, Max = 24.8755 ms
+IQR = 0.6744 ms, LowerFence = 20.1593 ms, UpperFence = 22.8569 ms
+ConfidenceInterval = [21.0936 ms; 22.2990 ms] (CI 99.9%), Margin = 0.6027 ms (2.78% of Mean)
+Skewness = 2.15, Kurtosis = 7.29
+
+
+// **************************
+// Benchmark: HashBenchmark.KeyDerivationPBKDF2SHA512: Job-RSCSGR(RemoveOutliers=False, Runtime=Core, Server=True, Toolchain=.NET Core 2.1, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5) [Iterations=10000]
+// *** Generate *** 
+// Result = Success
+// BinariesDirectoryPath = /Users/namc/dev/aspnet/DataProtection/benchmarks/PBKDF2Benchmarks/bin/Release/netcoreapp2.1/296ff007-5cd9-4177-bfe2-adfcc342d930/bin/Release/netcoreapp2.1
+
+// *** Build ***
+// dotnet restore took 2.3s
+// dotnet build took 6.38s
+// Result = Success
+
+// *** Execute ***
+// Launch: 1 / 3
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-CXBWFX(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+Pilot  1: 16 op, 413371000.00 ns, 25.8357 ms/op
+Pilot  2: 32 op, 1047714000.00 ns, 32.7411 ms/op
+
+IdleWarmup  1: 32 op, 9000.00 ns, 281.2500 ns/op
+IdleWarmup  2: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleWarmup  3: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleWarmup  4: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleWarmup  5: 32 op, 4000.00 ns, 125.0000 ns/op
+IdleWarmup  6: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleWarmup  7: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleWarmup  8: 32 op, 2000.00 ns, 62.5000 ns/op
+
+IdleTarget  1: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  2: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  3: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  4: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget  5: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  6: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  7: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  8: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget  9: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget 10: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 11: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 12: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget 13: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 14: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget 15: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 16: 32 op, 5000.00 ns, 156.2500 ns/op
+IdleTarget 17: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget 18: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 19: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget 20: 32 op, 3000.00 ns, 93.7500 ns/op
+
+MainWarmup  1: 32 op, 867082000.00 ns, 27.0963 ms/op
+MainWarmup  2: 32 op, 738944000.00 ns, 23.0920 ms/op
+MainWarmup  3: 32 op, 725038000.00 ns, 22.6574 ms/op
+MainWarmup  4: 32 op, 706820000.00 ns, 22.0881 ms/op
+MainWarmup  5: 32 op, 749098000.00 ns, 23.4093 ms/op
+
+MainTarget  1: 32 op, 727796000.00 ns, 22.7436 ms/op
+MainTarget  2: 32 op, 732598000.00 ns, 22.8937 ms/op
+MainTarget  3: 32 op, 767597000.00 ns, 23.9874 ms/op
+MainTarget  4: 32 op, 764114000.00 ns, 23.8786 ms/op
+MainTarget  5: 32 op, 731073000.00 ns, 22.8460 ms/op
+MainTarget  6: 32 op, 743810000.00 ns, 23.2441 ms/op
+MainTarget  7: 32 op, 833923000.00 ns, 26.0601 ms/op
+MainTarget  8: 32 op, 843249000.00 ns, 26.3515 ms/op
+MainTarget  9: 32 op, 900303000.00 ns, 28.1345 ms/op
+MainTarget 10: 32 op, 894196000.00 ns, 27.9436 ms/op
+
+Result  1: 32 op, 727793450.00 ns, 22.7435 ms/op
+Result  2: 32 op, 732595450.00 ns, 22.8936 ms/op
+Result  3: 32 op, 767594450.00 ns, 23.9873 ms/op
+Result  4: 32 op, 764111450.00 ns, 23.8785 ms/op
+Result  5: 32 op, 731070450.00 ns, 22.8460 ms/op
+Result  6: 32 op, 743807450.00 ns, 23.2440 ms/op
+Result  7: 32 op, 833920450.00 ns, 26.0600 ms/op
+Result  8: 32 op, 843246450.00 ns, 26.3515 ms/op
+Result  9: 32 op, 900300450.00 ns, 28.1344 ms/op
+Result 10: 32 op, 894193450.00 ns, 27.9435 ms/op
+GC:  20 0 0 0 320
+
+// Launch: 2 / 3
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-UJTNKJ(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+Pilot  1: 16 op, 351082000.00 ns, 21.9426 ms/op
+Pilot  2: 32 op, 761770000.00 ns, 23.8053 ms/op
+
+IdleWarmup  1: 32 op, 8000.00 ns, 250.0000 ns/op
+IdleWarmup  2: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleWarmup  3: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleWarmup  4: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleWarmup  5: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleWarmup  6: 32 op, 2000.00 ns, 62.5000 ns/op
+
+IdleTarget  1: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  2: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  3: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  4: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  5: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget  6: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget  7: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  8: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  9: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 10: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 11: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 12: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 13: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget 14: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 15: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 16: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 17: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 18: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 19: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 20: 32 op, 2000.00 ns, 62.5000 ns/op
+
+MainWarmup  1: 32 op, 706078000.00 ns, 22.0649 ms/op
+MainWarmup  2: 32 op, 740417000.00 ns, 23.1380 ms/op
+MainWarmup  3: 32 op, 835899000.00 ns, 26.1218 ms/op
+MainWarmup  4: 32 op, 722754000.00 ns, 22.5861 ms/op
+MainWarmup  5: 32 op, 708511000.00 ns, 22.1410 ms/op
+
+MainTarget  1: 32 op, 713734000.00 ns, 22.3042 ms/op
+MainTarget  2: 32 op, 739857000.00 ns, 23.1205 ms/op
+MainTarget  3: 32 op, 789625000.00 ns, 24.6758 ms/op
+MainTarget  4: 32 op, 742177000.00 ns, 23.1930 ms/op
+MainTarget  5: 32 op, 717043000.00 ns, 22.4076 ms/op
+MainTarget  6: 32 op, 770092000.00 ns, 24.0654 ms/op
+MainTarget  7: 32 op, 747994000.00 ns, 23.3748 ms/op
+MainTarget  8: 32 op, 717646000.00 ns, 22.4264 ms/op
+MainTarget  9: 32 op, 709097000.00 ns, 22.1593 ms/op
+MainTarget 10: 32 op, 726675000.00 ns, 22.7086 ms/op
+
+Result  1: 32 op, 713731850.00 ns, 22.3041 ms/op
+Result  2: 32 op, 739854850.00 ns, 23.1205 ms/op
+Result  3: 32 op, 789622850.00 ns, 24.6757 ms/op
+Result  4: 32 op, 742174850.00 ns, 23.1930 ms/op
+Result  5: 32 op, 717040850.00 ns, 22.4075 ms/op
+Result  6: 32 op, 770089850.00 ns, 24.0653 ms/op
+Result  7: 32 op, 747991850.00 ns, 23.3747 ms/op
+Result  8: 32 op, 717643850.00 ns, 22.4264 ms/op
+Result  9: 32 op, 709094850.00 ns, 22.1592 ms/op
+Result 10: 32 op, 726672850.00 ns, 22.7085 ms/op
+GC:  20 0 0 0 320
+
+// Launch: 3 / 3
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-VXKEBZ(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+Pilot  1: 16 op, 358752000.00 ns, 22.4220 ms/op
+Pilot  2: 32 op, 720817000.00 ns, 22.5255 ms/op
+
+IdleWarmup  1: 32 op, 7000.00 ns, 218.7500 ns/op
+IdleWarmup  2: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleWarmup  3: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleWarmup  4: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleWarmup  5: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleWarmup  6: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleWarmup  7: 32 op, 2000.00 ns, 62.5000 ns/op
+
+IdleTarget  1: 32 op, 8000.00 ns, 250.0000 ns/op
+IdleTarget  2: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  3: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  4: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  5: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  6: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  7: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget  8: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget  9: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget 10: 32 op, 3000.00 ns, 93.7500 ns/op
+IdleTarget 11: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 12: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 13: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 14: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 15: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 16: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 17: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 18: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 19: 32 op, 2000.00 ns, 62.5000 ns/op
+IdleTarget 20: 32 op, 2000.00 ns, 62.5000 ns/op
+
+MainWarmup  1: 32 op, 761393000.00 ns, 23.7935 ms/op
+MainWarmup  2: 32 op, 717976000.00 ns, 22.4368 ms/op
+MainWarmup  3: 32 op, 706718000.00 ns, 22.0849 ms/op
+MainWarmup  4: 32 op, 743548000.00 ns, 23.2359 ms/op
+MainWarmup  5: 32 op, 826703000.00 ns, 25.8345 ms/op
+
+MainTarget  1: 32 op, 722442000.00 ns, 22.5763 ms/op
+MainTarget  2: 32 op, 707926000.00 ns, 22.1227 ms/op
+MainTarget  3: 32 op, 700002000.00 ns, 21.8751 ms/op
+MainTarget  4: 32 op, 704550000.00 ns, 22.0172 ms/op
+MainTarget  5: 32 op, 702460000.00 ns, 21.9519 ms/op
+MainTarget  6: 32 op, 848227000.00 ns, 26.5071 ms/op
+MainTarget  7: 32 op, 750492000.00 ns, 23.4529 ms/op
+MainTarget  8: 32 op, 731409000.00 ns, 22.8565 ms/op
+MainTarget  9: 32 op, 698722000.00 ns, 21.8351 ms/op
+MainTarget 10: 32 op, 714265000.00 ns, 22.3208 ms/op
+
+Result  1: 32 op, 722439550.00 ns, 22.5762 ms/op
+Result  2: 32 op, 707923550.00 ns, 22.1226 ms/op
+Result  3: 32 op, 699999550.00 ns, 21.8750 ms/op
+Result  4: 32 op, 704547550.00 ns, 22.0171 ms/op
+Result  5: 32 op, 702457550.00 ns, 21.9518 ms/op
+Result  6: 32 op, 848224550.00 ns, 26.5070 ms/op
+Result  7: 32 op, 750489550.00 ns, 23.4528 ms/op
+Result  8: 32 op, 731406550.00 ns, 22.8565 ms/op
+Result  9: 32 op, 698719550.00 ns, 21.8350 ms/op
+Result 10: 32 op, 714262550.00 ns, 22.3207 ms/op
+GC:  20 0 0 0 320
+
+
+// Run, Diagnostic
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-SEDHSF(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+// AfterGlobalSetup
+// BeforeMainRun
+// BeforeGlobalCleanup
+Result  1: 32 op, 729205000.00 ns, 22.7877 ms/op
+Result  2: 32 op, 739750000.00 ns, 23.1172 ms/op
+Result  3: 32 op, 902074000.00 ns, 28.1898 ms/op
+Result  4: 32 op, 830443000.00 ns, 25.9513 ms/op
+Result  5: 32 op, 754223000.00 ns, 23.5695 ms/op
+Result  6: 32 op, 730676000.00 ns, 22.8336 ms/op
+Result  7: 32 op, 714355000.00 ns, 22.3236 ms/op
+Result  8: 32 op, 734881000.00 ns, 22.9650 ms/op
+Result  9: 32 op, 723707000.00 ns, 22.6158 ms/op
+Result 10: 32 op, 708769000.00 ns, 22.1490 ms/op
+GC:  20 0 0 563361280 320
+
+
+Mean = 23.5344 ms, StdErr = 0.3207 ms (1.36%); N = 30, StdDev = 1.7563 ms
+Min = 21.8350 ms, Q1 = 22.3207 ms, Median = 22.8750 ms, Q3 = 23.9873 ms, Max = 28.1344 ms
+IQR = 1.6666 ms, LowerFence = 19.8208 ms, UpperFence = 26.4873 ms
+ConfidenceInterval = [22.3610 ms; 24.7078 ms] (CI 99.9%), Margin = 1.1734 ms (4.99% of Mean)
+Skewness = 1.34, Kurtosis = 3.69
+
+
+// **************************
+// Benchmark: HashBenchmark.Rfc2898DeriveBytesSHA512: Job-RSCSGR(RemoveOutliers=False, Runtime=Core, Server=True, Toolchain=.NET Core 2.1, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5) [Iterations=100000]
+// *** Generate *** 
+// Result = Success
+// BinariesDirectoryPath = /Users/namc/dev/aspnet/DataProtection/benchmarks/PBKDF2Benchmarks/bin/Release/netcoreapp2.1/0c042599-0d3a-413d-9829-8fccf731285d/bin/Release/netcoreapp2.1
+
+// *** Build ***
+// dotnet restore took 2.41s
+// dotnet build took 6.16s
+// Result = Success
+
+// *** Execute ***
+// Launch: 1 / 3
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-MEYIEA(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+Pilot  1: 16 op, 3468485000.00 ns, 216.7803 ms/op
+
+IdleWarmup  1: 16 op, 5000.00 ns, 312.5000 ns/op
+IdleWarmup  2: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleWarmup  3: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleWarmup  4: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleWarmup  5: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleWarmup  6: 16 op, 2000.00 ns, 125.0000 ns/op
+
+IdleTarget  1: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  2: 16 op, 3000.00 ns, 187.5000 ns/op
+IdleTarget  3: 16 op, 3000.00 ns, 187.5000 ns/op
+IdleTarget  4: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  5: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  6: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  7: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  8: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  9: 16 op, 1000.00 ns, 62.5000 ns/op
+IdleTarget 10: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 11: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 12: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 13: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 14: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 15: 16 op, 3000.00 ns, 187.5000 ns/op
+IdleTarget 16: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 17: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 18: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 19: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 20: 16 op, 2000.00 ns, 125.0000 ns/op
+
+MainWarmup  1: 16 op, 3395597000.00 ns, 212.2248 ms/op
+MainWarmup  2: 16 op, 3921331000.00 ns, 245.0832 ms/op
+MainWarmup  3: 16 op, 3439148000.00 ns, 214.9468 ms/op
+MainWarmup  4: 16 op, 3505212000.00 ns, 219.0758 ms/op
+MainWarmup  5: 16 op, 3571264000.00 ns, 223.2040 ms/op
+
+MainTarget  1: 16 op, 3393901000.00 ns, 212.1188 ms/op
+MainTarget  2: 16 op, 3526042000.00 ns, 220.3776 ms/op
+MainTarget  3: 16 op, 3393534000.00 ns, 212.0959 ms/op
+MainTarget  4: 16 op, 3400214000.00 ns, 212.5134 ms/op
+MainTarget  5: 16 op, 3406061000.00 ns, 212.8788 ms/op
+MainTarget  6: 16 op, 3533368000.00 ns, 220.8355 ms/op
+MainTarget  7: 16 op, 3462556000.00 ns, 216.4098 ms/op
+MainTarget  8: 16 op, 3463850000.00 ns, 216.4906 ms/op
+MainTarget  9: 16 op, 3521126000.00 ns, 220.0704 ms/op
+MainTarget 10: 16 op, 3446352000.00 ns, 215.3970 ms/op
+
+Result  1: 16 op, 3393898900.00 ns, 212.1187 ms/op
+Result  2: 16 op, 3526039900.00 ns, 220.3775 ms/op
+Result  3: 16 op, 3393531900.00 ns, 212.0957 ms/op
+Result  4: 16 op, 3400211900.00 ns, 212.5132 ms/op
+Result  5: 16 op, 3406058900.00 ns, 212.8787 ms/op
+Result  6: 16 op, 3533365900.00 ns, 220.8354 ms/op
+Result  7: 16 op, 3462553900.00 ns, 216.4096 ms/op
+Result  8: 16 op, 3463847900.00 ns, 216.4905 ms/op
+Result  9: 16 op, 3521123900.00 ns, 220.0702 ms/op
+Result 10: 16 op, 3446349900.00 ns, 215.3969 ms/op
+GC:  0 0 0 0 160
+
+// Launch: 2 / 3
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-ZVDYIV(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+Pilot  1: 16 op, 3524859000.00 ns, 220.3037 ms/op
+
+IdleWarmup  1: 16 op, 13000.00 ns, 812.5000 ns/op
+IdleWarmup  2: 16 op, 1000.00 ns, 62.5000 ns/op
+IdleWarmup  3: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleWarmup  4: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleWarmup  5: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleWarmup  6: 16 op, 1000.00 ns, 62.5000 ns/op
+
+IdleTarget  1: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  2: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  3: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  4: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  5: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  6: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  7: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  8: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  9: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 10: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 11: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 12: 16 op, 1000.00 ns, 62.5000 ns/op
+IdleTarget 13: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 14: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 15: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 16: 16 op, 7000.00 ns, 437.5000 ns/op
+IdleTarget 17: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 18: 16 op, 3000.00 ns, 187.5000 ns/op
+IdleTarget 19: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 20: 16 op, 2000.00 ns, 125.0000 ns/op
+
+MainWarmup  1: 16 op, 3430694000.00 ns, 214.4184 ms/op
+MainWarmup  2: 16 op, 3403909000.00 ns, 212.7443 ms/op
+MainWarmup  3: 16 op, 3465395000.00 ns, 216.5872 ms/op
+MainWarmup  4: 16 op, 3445762000.00 ns, 215.3601 ms/op
+MainWarmup  5: 16 op, 3556855000.00 ns, 222.3034 ms/op
+
+MainTarget  1: 16 op, 3392001000.00 ns, 212.0001 ms/op
+MainTarget  2: 16 op, 3535705000.00 ns, 220.9816 ms/op
+MainTarget  3: 16 op, 3412273000.00 ns, 213.2671 ms/op
+MainTarget  4: 16 op, 3349287000.00 ns, 209.3304 ms/op
+MainTarget  5: 16 op, 3382113000.00 ns, 211.3821 ms/op
+MainTarget  6: 16 op, 3489775000.00 ns, 218.1109 ms/op
+MainTarget  7: 16 op, 3560560000.00 ns, 222.5350 ms/op
+MainTarget  8: 16 op, 3393554000.00 ns, 212.0971 ms/op
+MainTarget  9: 16 op, 3423585000.00 ns, 213.9741 ms/op
+MainTarget 10: 16 op, 3455292000.00 ns, 215.9558 ms/op
+
+Result  1: 16 op, 3391998750.00 ns, 211.9999 ms/op
+Result  2: 16 op, 3535702750.00 ns, 220.9814 ms/op
+Result  3: 16 op, 3412270750.00 ns, 213.2669 ms/op
+Result  4: 16 op, 3349284750.00 ns, 209.3303 ms/op
+Result  5: 16 op, 3382110750.00 ns, 211.3819 ms/op
+Result  6: 16 op, 3489772750.00 ns, 218.1108 ms/op
+Result  7: 16 op, 3560557750.00 ns, 222.5349 ms/op
+Result  8: 16 op, 3393551750.00 ns, 212.0970 ms/op
+Result  9: 16 op, 3423582750.00 ns, 213.9739 ms/op
+Result 10: 16 op, 3455289750.00 ns, 215.9556 ms/op
+GC:  0 0 0 0 160
+
+// Launch: 3 / 3
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-IDMQXY(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+Pilot  1: 16 op, 3411860000.00 ns, 213.2413 ms/op
+
+IdleWarmup  1: 16 op, 5000.00 ns, 312.5000 ns/op
+IdleWarmup  2: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleWarmup  3: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleWarmup  4: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleWarmup  5: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleWarmup  6: 16 op, 2000.00 ns, 125.0000 ns/op
+
+IdleTarget  1: 16 op, 3000.00 ns, 187.5000 ns/op
+IdleTarget  2: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  3: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  4: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  5: 16 op, 3000.00 ns, 187.5000 ns/op
+IdleTarget  6: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  7: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  8: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  9: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 10: 16 op, 1000.00 ns, 62.5000 ns/op
+IdleTarget 11: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 12: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 13: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 14: 16 op, 1000.00 ns, 62.5000 ns/op
+IdleTarget 15: 16 op, 1000.00 ns, 62.5000 ns/op
+IdleTarget 16: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 17: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 18: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 19: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 20: 16 op, 2000.00 ns, 125.0000 ns/op
+
+MainWarmup  1: 16 op, 3490044000.00 ns, 218.1278 ms/op
+MainWarmup  2: 16 op, 3442451000.00 ns, 215.1532 ms/op
+MainWarmup  3: 16 op, 3534058000.00 ns, 220.8786 ms/op
+MainWarmup  4: 16 op, 3461159000.00 ns, 216.3224 ms/op
+MainWarmup  5: 16 op, 3492556000.00 ns, 218.2848 ms/op
+
+MainTarget  1: 16 op, 3667540000.00 ns, 229.2213 ms/op
+MainTarget  2: 16 op, 4084928000.00 ns, 255.3080 ms/op
+MainTarget  3: 16 op, 3960509000.00 ns, 247.5318 ms/op
+MainTarget  4: 16 op, 4064633000.00 ns, 254.0396 ms/op
+MainTarget  5: 16 op, 3640638000.00 ns, 227.5399 ms/op
+MainTarget  6: 16 op, 3836777000.00 ns, 239.7986 ms/op
+MainTarget  7: 16 op, 3485929000.00 ns, 217.8706 ms/op
+MainTarget  8: 16 op, 3462118000.00 ns, 216.3824 ms/op
+MainTarget  9: 16 op, 3516584000.00 ns, 219.7865 ms/op
+MainTarget 10: 16 op, 3492918000.00 ns, 218.3074 ms/op
+
+Result  1: 16 op, 3667538050.00 ns, 229.2211 ms/op
+Result  2: 16 op, 4084926050.00 ns, 255.3079 ms/op
+Result  3: 16 op, 3960507050.00 ns, 247.5317 ms/op
+Result  4: 16 op, 4064631050.00 ns, 254.0394 ms/op
+Result  5: 16 op, 3640636050.00 ns, 227.5398 ms/op
+Result  6: 16 op, 3836775050.00 ns, 239.7984 ms/op
+Result  7: 16 op, 3485927050.00 ns, 217.8704 ms/op
+Result  8: 16 op, 3462116050.00 ns, 216.3823 ms/op
+Result  9: 16 op, 3516582050.00 ns, 219.7864 ms/op
+Result 10: 16 op, 3492916050.00 ns, 218.3073 ms/op
+GC:  0 0 0 0 160
+
+
+// Run, Diagnostic
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-GMCHSY(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+// AfterGlobalSetup
+// BeforeMainRun
+// BeforeGlobalCleanup
+Result  1: 16 op, 3419849200.00 ns, 213.7406 ms/op
+Result  2: 16 op, 3484058200.00 ns, 217.7536 ms/op
+Result  3: 16 op, 3328559200.00 ns, 208.0350 ms/op
+Result  4: 16 op, 3317884200.00 ns, 207.3678 ms/op
+Result  5: 16 op, 3400833200.00 ns, 212.5521 ms/op
+Result  6: 16 op, 3485621200.00 ns, 217.8513 ms/op
+Result  7: 16 op, 3401957200.00 ns, 212.6223 ms/op
+Result  8: 16 op, 3374518200.00 ns, 210.9074 ms/op
+Result  9: 16 op, 3489320200.00 ns, 218.0825 ms/op
+Result 10: 16 op, 3452452200.00 ns, 215.7783 ms/op
+GC:  0 0 0 142080 160
+
+
+Mean = 221.1535 ms, StdErr = 2.2437 ms (1.01%); N = 30, StdDev = 12.2895 ms
+Min = 209.3303 ms, Q1 = 212.8787 ms, Median = 217.1805 ms, Q3 = 220.9814 ms, Max = 255.3079 ms
+IQR = 8.1027 ms, LowerFence = 200.7246 ms, UpperFence = 233.1355 ms
+ConfidenceInterval = [212.9427 ms; 229.3642 ms] (CI 99.9%), Margin = 8.2108 ms (3.71% of Mean)
+Skewness = 1.66, Kurtosis = 4.7
+
+
+// **************************
+// Benchmark: HashBenchmark.KeyDerivationPBKDF2SHA512: Job-RSCSGR(RemoveOutliers=False, Runtime=Core, Server=True, Toolchain=.NET Core 2.1, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5) [Iterations=100000]
+// *** Generate *** 
+// Result = Success
+// BinariesDirectoryPath = /Users/namc/dev/aspnet/DataProtection/benchmarks/PBKDF2Benchmarks/bin/Release/netcoreapp2.1/4b4d05df-205f-438a-96f3-64ddc002407a/bin/Release/netcoreapp2.1
+
+// *** Build ***
+// dotnet restore took 2.34s
+// dotnet build took 6.44s
+// Result = Success
+
+// *** Execute ***
+// Launch: 1 / 3
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-VAUVAM(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+Pilot  1: 16 op, 3547238000.00 ns, 221.7024 ms/op
+
+IdleWarmup  1: 16 op, 7000.00 ns, 437.5000 ns/op
+IdleWarmup  2: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleWarmup  3: 16 op, 3000.00 ns, 187.5000 ns/op
+IdleWarmup  4: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleWarmup  5: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleWarmup  6: 16 op, 2000.00 ns, 125.0000 ns/op
+
+IdleTarget  1: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  2: 16 op, 1000.00 ns, 62.5000 ns/op
+IdleTarget  3: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  4: 16 op, 1000.00 ns, 62.5000 ns/op
+IdleTarget  5: 16 op, 1000.00 ns, 62.5000 ns/op
+IdleTarget  6: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  7: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  8: 16 op, 1000.00 ns, 62.5000 ns/op
+IdleTarget  9: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 10: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 11: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 12: 16 op, 1000.00 ns, 62.5000 ns/op
+IdleTarget 13: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 14: 16 op, 3000.00 ns, 187.5000 ns/op
+IdleTarget 15: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 16: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 17: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 18: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 19: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 20: 16 op, 2000.00 ns, 125.0000 ns/op
+
+MainWarmup  1: 16 op, 3669421000.00 ns, 229.3388 ms/op
+MainWarmup  2: 16 op, 3667477000.00 ns, 229.2173 ms/op
+MainWarmup  3: 16 op, 3669429000.00 ns, 229.3393 ms/op
+MainWarmup  4: 16 op, 3990399000.00 ns, 249.3999 ms/op
+MainWarmup  5: 16 op, 3777729000.00 ns, 236.1081 ms/op
+
+MainTarget  1: 16 op, 3706850000.00 ns, 231.6781 ms/op
+MainTarget  2: 16 op, 3546980000.00 ns, 221.6863 ms/op
+MainTarget  3: 16 op, 3610927000.00 ns, 225.6829 ms/op
+MainTarget  4: 16 op, 3671983000.00 ns, 229.4989 ms/op
+MainTarget  5: 16 op, 3698679000.00 ns, 231.1674 ms/op
+MainTarget  6: 16 op, 3952664000.00 ns, 247.0415 ms/op
+MainTarget  7: 16 op, 4205539000.00 ns, 262.8462 ms/op
+MainTarget  8: 16 op, 4198562000.00 ns, 262.4101 ms/op
+MainTarget  9: 16 op, 3758335000.00 ns, 234.8959 ms/op
+MainTarget 10: 16 op, 3605077000.00 ns, 225.3173 ms/op
+
+Result  1: 16 op, 3706848200.00 ns, 231.6780 ms/op
+Result  2: 16 op, 3546978200.00 ns, 221.6861 ms/op
+Result  3: 16 op, 3610925200.00 ns, 225.6828 ms/op
+Result  4: 16 op, 3671981200.00 ns, 229.4988 ms/op
+Result  5: 16 op, 3698677200.00 ns, 231.1673 ms/op
+Result  6: 16 op, 3952662200.00 ns, 247.0414 ms/op
+Result  7: 16 op, 4205537200.00 ns, 262.8461 ms/op
+Result  8: 16 op, 4198560200.00 ns, 262.4100 ms/op
+Result  9: 16 op, 3758333200.00 ns, 234.8958 ms/op
+Result 10: 16 op, 3605075200.00 ns, 225.3172 ms/op
+GC:  120 0 0 0 160
+
+// Launch: 2 / 3
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-KEOFRJ(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+Pilot  1: 16 op, 3845300000.00 ns, 240.3313 ms/op
+
+IdleWarmup  1: 16 op, 8000.00 ns, 500.0000 ns/op
+IdleWarmup  2: 16 op, 3000.00 ns, 187.5000 ns/op
+IdleWarmup  3: 16 op, 3000.00 ns, 187.5000 ns/op
+IdleWarmup  4: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleWarmup  5: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleWarmup  6: 16 op, 2000.00 ns, 125.0000 ns/op
+
+IdleTarget  1: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  2: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  3: 16 op, 3000.00 ns, 187.5000 ns/op
+IdleTarget  4: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  5: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  6: 16 op, 3000.00 ns, 187.5000 ns/op
+IdleTarget  7: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  8: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  9: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 10: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 11: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 12: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 13: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 14: 16 op, 3000.00 ns, 187.5000 ns/op
+IdleTarget 15: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 16: 16 op, 3000.00 ns, 187.5000 ns/op
+IdleTarget 17: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 18: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 19: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 20: 16 op, 2000.00 ns, 125.0000 ns/op
+
+MainWarmup  1: 16 op, 3532044000.00 ns, 220.7528 ms/op
+MainWarmup  2: 16 op, 4076582000.00 ns, 254.7864 ms/op
+MainWarmup  3: 16 op, 3792141000.00 ns, 237.0088 ms/op
+MainWarmup  4: 16 op, 3590152000.00 ns, 224.3845 ms/op
+MainWarmup  5: 16 op, 3449683000.00 ns, 215.6052 ms/op
+
+MainTarget  1: 16 op, 3783732000.00 ns, 236.4833 ms/op
+MainTarget  2: 16 op, 3985213000.00 ns, 249.0758 ms/op
+MainTarget  3: 16 op, 3598272000.00 ns, 224.8920 ms/op
+MainTarget  4: 16 op, 3542088000.00 ns, 221.3805 ms/op
+MainTarget  5: 16 op, 3574692000.00 ns, 223.4183 ms/op
+MainTarget  6: 16 op, 3803026000.00 ns, 237.6891 ms/op
+MainTarget  7: 16 op, 3572721000.00 ns, 223.2951 ms/op
+MainTarget  8: 16 op, 3761699000.00 ns, 235.1062 ms/op
+MainTarget  9: 16 op, 3820520000.00 ns, 238.7825 ms/op
+MainTarget 10: 16 op, 4113368000.00 ns, 257.0855 ms/op
+
+Result  1: 16 op, 3783729800.00 ns, 236.4831 ms/op
+Result  2: 16 op, 3985210800.00 ns, 249.0757 ms/op
+Result  3: 16 op, 3598269800.00 ns, 224.8919 ms/op
+Result  4: 16 op, 3542085800.00 ns, 221.3804 ms/op
+Result  5: 16 op, 3574689800.00 ns, 223.4181 ms/op
+Result  6: 16 op, 3803023800.00 ns, 237.6890 ms/op
+Result  7: 16 op, 3572718800.00 ns, 223.2949 ms/op
+Result  8: 16 op, 3761696800.00 ns, 235.1061 ms/op
+Result  9: 16 op, 3820517800.00 ns, 238.7824 ms/op
+Result 10: 16 op, 4113365800.00 ns, 257.0854 ms/op
+GC:  120 0 0 0 160
+
+// Launch: 3 / 3
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-NRJFSA(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+Pilot  1: 16 op, 4321277000.00 ns, 270.0798 ms/op
+
+IdleWarmup  1: 16 op, 9000.00 ns, 562.5000 ns/op
+IdleWarmup  2: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleWarmup  3: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleWarmup  4: 16 op, 1000.00 ns, 62.5000 ns/op
+IdleWarmup  5: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleWarmup  6: 16 op, 2000.00 ns, 125.0000 ns/op
+
+IdleTarget  1: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  2: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  3: 16 op, 1000.00 ns, 62.5000 ns/op
+IdleTarget  4: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  5: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  6: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  7: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  8: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget  9: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 10: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 11: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 12: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 13: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 14: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 15: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 16: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 17: 16 op, 3000.00 ns, 187.5000 ns/op
+IdleTarget 18: 16 op, 1000.00 ns, 62.5000 ns/op
+IdleTarget 19: 16 op, 2000.00 ns, 125.0000 ns/op
+IdleTarget 20: 16 op, 2000.00 ns, 125.0000 ns/op
+
+MainWarmup  1: 16 op, 3602438000.00 ns, 225.1524 ms/op
+MainWarmup  2: 16 op, 3669678000.00 ns, 229.3549 ms/op
+MainWarmup  3: 16 op, 3695274000.00 ns, 230.9546 ms/op
+MainWarmup  4: 16 op, 3612389000.00 ns, 225.7743 ms/op
+MainWarmup  5: 16 op, 3544039000.00 ns, 221.5024 ms/op
+
+MainTarget  1: 16 op, 3602576000.00 ns, 225.1610 ms/op
+MainTarget  2: 16 op, 3675415000.00 ns, 229.7134 ms/op
+MainTarget  3: 16 op, 3687230000.00 ns, 230.4519 ms/op
+MainTarget  4: 16 op, 4288173000.00 ns, 268.0108 ms/op
+MainTarget  5: 16 op, 4036323000.00 ns, 252.2702 ms/op
+MainTarget  6: 16 op, 3681608000.00 ns, 230.1005 ms/op
+MainTarget  7: 16 op, 3762543000.00 ns, 235.1589 ms/op
+MainTarget  8: 16 op, 3842423000.00 ns, 240.1514 ms/op
+MainTarget  9: 16 op, 3512306000.00 ns, 219.5191 ms/op
+MainTarget 10: 16 op, 3463543000.00 ns, 216.4714 ms/op
+
+Result  1: 16 op, 3602574050.00 ns, 225.1609 ms/op
+Result  2: 16 op, 3675413050.00 ns, 229.7133 ms/op
+Result  3: 16 op, 3687228050.00 ns, 230.4518 ms/op
+Result  4: 16 op, 4288171050.00 ns, 268.0107 ms/op
+Result  5: 16 op, 4036321050.00 ns, 252.2701 ms/op
+Result  6: 16 op, 3681606050.00 ns, 230.1004 ms/op
+Result  7: 16 op, 3762541050.00 ns, 235.1588 ms/op
+Result  8: 16 op, 3842421050.00 ns, 240.1513 ms/op
+Result  9: 16 op, 3512304050.00 ns, 219.5190 ms/op
+Result 10: 16 op, 3463541050.00 ns, 216.4713 ms/op
+GC:  120 0 0 0 160
+
+
+// Run, Diagnostic
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+// GC=Concurrent Server
+// Job: Job-EOZYYW(RemoveOutliers=False, Runtime=Core, Server=True, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+
+// AfterGlobalSetup
+// BeforeMainRun
+// BeforeGlobalCleanup
+Result  1: 16 op, 5265856550.00 ns, 329.1160 ms/op
+Result  2: 16 op, 4647160550.00 ns, 290.4475 ms/op
+Result  3: 16 op, 3866753550.00 ns, 241.6721 ms/op
+Result  4: 16 op, 3565576550.00 ns, 222.8485 ms/op
+Result  5: 16 op, 3706949550.00 ns, 231.6843 ms/op
+Result  6: 16 op, 3675252550.00 ns, 229.7033 ms/op
+Result  7: 16 op, 3615338550.00 ns, 225.9587 ms/op
+Result  8: 16 op, 3580232550.00 ns, 223.7645 ms/op
+Result  9: 16 op, 3614065550.00 ns, 225.8791 ms/op
+Result 10: 16 op, 3633834550.00 ns, 227.1147 ms/op
+GC:  120 0 0 2816080640 160
+
+
+Mean = 235.5479 ms, StdErr = 2.5171 ms (1.07%); N = 30, StdDev = 13.7865 ms
+Min = 216.4713 ms, Q1 = 225.1609 ms, Median = 231.4227 ms, Q3 = 240.1513 ms, Max = 268.0107 ms
+IQR = 14.9904 ms, LowerFence = 202.6752 ms, UpperFence = 262.6370 ms
+ConfidenceInterval = [226.3370 ms; 244.7588 ms] (CI 99.9%), Margin = 9.2109 ms (3.91% of Mean)
+Skewness = 0.86, Kurtosis = 2.68
+
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts/results/PBKDF2Benchmark.HashBenchmark-report-github.md
+
+// * Detailed results *
+HashBenchmark.Rfc2898DeriveBytesSHA512: Job-RSCSGR(RemoveOutliers=False, Runtime=Core, Server=True, Toolchain=.NET Core 2.1, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5) [Iterations=1000]
+Runtime = .NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 2.4834 ms, StdErr = 0.0940 ms (3.79%); N = 30, StdDev = 0.5150 ms
+Min = 2.0885 ms, Q1 = 2.1761 ms, Median = 2.3040 ms, Q3 = 2.4361 ms, Max = 4.0404 ms
+IQR = 0.2600 ms, LowerFence = 1.7861 ms, UpperFence = 2.8260 ms
+ConfidenceInterval = [2.1393 ms; 2.8275 ms] (CI 99.9%), Margin = 0.3441 ms (13.85% of Mean)
+Skewness = 1.7, Kurtosis = 4.69
+
+
+HashBenchmark.KeyDerivationPBKDF2SHA512: Job-RSCSGR(RemoveOutliers=False, Runtime=Core, Server=True, Toolchain=.NET Core 2.1, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5) [Iterations=1000]
+Runtime = .NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 2.5519 ms, StdErr = 0.0585 ms (2.29%); N = 30, StdDev = 0.3207 ms
+Min = 2.1991 ms, Q1 = 2.3068 ms, Median = 2.4490 ms, Q3 = 2.7084 ms, Max = 3.2633 ms
+IQR = 0.4016 ms, LowerFence = 1.7044 ms, UpperFence = 3.3109 ms
+ConfidenceInterval = [2.3377 ms; 2.7662 ms] (CI 99.9%), Margin = 0.2142 ms (8.40% of Mean)
+Skewness = 0.85, Kurtosis = 2.3
+
+
+HashBenchmark.Rfc2898DeriveBytesSHA512: Job-RSCSGR(RemoveOutliers=False, Runtime=Core, Server=True, Toolchain=.NET Core 2.1, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5) [Iterations=10000]
+Runtime = .NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 21.6963 ms, StdErr = 0.1647 ms (0.76%); N = 30, StdDev = 0.9021 ms
+Min = 20.8795 ms, Q1 = 21.1709 ms, Median = 21.4096 ms, Q3 = 21.8453 ms, Max = 24.8755 ms
+IQR = 0.6744 ms, LowerFence = 20.1593 ms, UpperFence = 22.8569 ms
+ConfidenceInterval = [21.0936 ms; 22.2990 ms] (CI 99.9%), Margin = 0.6027 ms (2.78% of Mean)
+Skewness = 2.15, Kurtosis = 7.29
+
+
+HashBenchmark.KeyDerivationPBKDF2SHA512: Job-RSCSGR(RemoveOutliers=False, Runtime=Core, Server=True, Toolchain=.NET Core 2.1, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5) [Iterations=10000]
+Runtime = .NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 23.5344 ms, StdErr = 0.3207 ms (1.36%); N = 30, StdDev = 1.7563 ms
+Min = 21.8350 ms, Q1 = 22.3207 ms, Median = 22.8750 ms, Q3 = 23.9873 ms, Max = 28.1344 ms
+IQR = 1.6666 ms, LowerFence = 19.8208 ms, UpperFence = 26.4873 ms
+ConfidenceInterval = [22.3610 ms; 24.7078 ms] (CI 99.9%), Margin = 1.1734 ms (4.99% of Mean)
+Skewness = 1.34, Kurtosis = 3.69
+
+
+HashBenchmark.Rfc2898DeriveBytesSHA512: Job-RSCSGR(RemoveOutliers=False, Runtime=Core, Server=True, Toolchain=.NET Core 2.1, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5) [Iterations=100000]
+Runtime = .NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 221.1535 ms, StdErr = 2.2437 ms (1.01%); N = 30, StdDev = 12.2895 ms
+Min = 209.3303 ms, Q1 = 212.8787 ms, Median = 217.1805 ms, Q3 = 220.9814 ms, Max = 255.3079 ms
+IQR = 8.1027 ms, LowerFence = 200.7246 ms, UpperFence = 233.1355 ms
+ConfidenceInterval = [212.9427 ms; 229.3642 ms] (CI 99.9%), Margin = 8.2108 ms (3.71% of Mean)
+Skewness = 1.66, Kurtosis = 4.7
+
+
+HashBenchmark.KeyDerivationPBKDF2SHA512: Job-RSCSGR(RemoveOutliers=False, Runtime=Core, Server=True, Toolchain=.NET Core 2.1, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, WarmupCount=5) [Iterations=100000]
+Runtime = .NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT; GC = Concurrent Server
+Mean = 235.5479 ms, StdErr = 2.5171 ms (1.07%); N = 30, StdDev = 13.7865 ms
+Min = 216.4713 ms, Q1 = 225.1609 ms, Median = 231.4227 ms, Q3 = 240.1513 ms, Max = 268.0107 ms
+IQR = 14.9904 ms, LowerFence = 202.6752 ms, UpperFence = 262.6370 ms
+ConfidenceInterval = [226.3370 ms; 244.7588 ms] (CI 99.9%), Margin = 9.2109 ms (3.91% of Mean)
+Skewness = 0.86, Kurtosis = 2.68
+
+
+Total time: 00:12:28 (748.56 sec)
+
+// * Summary *
+
+BenchmarkDotNet=v0.10.11, OS=macOS 10.13.3 (17D102) [Darwin 17.4.0]
+Processor=Intel Core i5-5287U CPU 2.90GHz (Broadwell), ProcessorCount=4
+.NET Core SDK=2.1.300-preview2-008251
+  [Host]     : .NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+  Job-RSCSGR : .NET Core 2.1.0-preview2-26130-04 (Framework 4.6.26130.05), 64bit RyuJIT
+
+RemoveOutliers=False  Runtime=Core  Server=True  
+Toolchain=.NET Core 2.1  LaunchCount=3  RunStrategy=Throughput  
+TargetCount=10  WarmupCount=5  
+
+                    Method | Iterations |       Mean |     Error |     StdDev |    Op/s |    Gen 0 |  Allocated |
+-------------------------- |----------- |-----------:|----------:|-----------:|--------:|---------:|-----------:|
+  Rfc2898DeriveBytesSHA512 |       1000 |   2.483 ms | 0.3441 ms |  0.5150 ms | 402.674 |        - |      888 B |
+ KeyDerivationPBKDF2SHA512 |       1000 |   2.552 ms | 0.2142 ms |  0.3207 ms | 391.864 |   3.9063 |   176504 B |
+  Rfc2898DeriveBytesSHA512 |      10000 |  21.696 ms | 0.6027 ms |  0.9021 ms |  46.091 |        - |      888 B |
+ KeyDerivationPBKDF2SHA512 |      10000 |  23.534 ms | 1.1734 ms |  1.7563 ms |  42.491 |  62.5000 |  1760504 B |
+  Rfc2898DeriveBytesSHA512 |     100000 | 221.153 ms | 8.2108 ms | 12.2895 ms |   4.522 |        - |      888 B |
+ KeyDerivationPBKDF2SHA512 |     100000 | 235.548 ms | 9.2109 ms | 13.7865 ms |   4.245 | 750.0000 | 17600504 B |
+
+// * Legends *
+  Iterations : Value of the 'Iterations' parameter
+  Mean       : Arithmetic mean of all measurements
+  Error      : Half of 99.9% confidence interval
+  StdDev     : Standard deviation of all measurements
+  Op/s       : Operation per second
+  Gen 0      : GC Generation 0 collects per 1k Operations
+  Allocated  : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  1 ms       : 1 Millisecond (0.001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+// * Artifacts cleanup *
